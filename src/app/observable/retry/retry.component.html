@@ -1,0 +1,36 @@
+<div class="my-3">
+    <h2>Retry, RetryWhen, Scan, Delay</h2>
+</div>
+<br>
+<hr>
+
+<table class="table w-50 text-center m-auto">
+    <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">{{person?.id}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td>{{person?.name}}</td>  
+        </tr>
+        <tr>
+          <th scope="row">username</th>
+          <td>{{person.username}}</td>
+        </tr>
+        <tr>
+          <th scope="row">email</th>
+          <td>{{person.email}}</td>
+        </tr>
+        <br><br>
+
+      </tbody>
+      <button class="btn btn-primary" type="button" (click)="fetchDetail()">
+        <span *ngIf="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Fetch Details
+      </button>
+      
+</table>
+

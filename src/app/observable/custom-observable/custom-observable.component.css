@@ -1,4 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
 ul{
     padding: 0;
     margin: 0;
@@ -24,7 +23,7 @@ ul.techList.error li  {
     margin-bottom: 10px;
 }
 
-ul.techList.completed li  {
+ul.techList.complete li  {
     color: green;
     background: #06f04036;
     border-color: green;
